@@ -14,12 +14,19 @@ end
 
 
 def reduce(source, start = 0)
-  i = 0
+  
+  if start
+    total = start
+    i = 0
+  else
+    total = source[0]
+    i = 1
+  end
   while i < source.length do
-    start = yield(start, source[i])
+    total = yield(total, source[i])
     i += 1
   end
-  start
+  total
 end  
 
 
