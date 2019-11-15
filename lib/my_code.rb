@@ -15,12 +15,12 @@ end
 
 def reduce(source, start = 0)
   i = 0
-  value = 0
+  # value = 0
   while i < source.length do
-    value = yield(value, source[i])
+    start = yield(start, source[i])
     i += 1
   end
-  value
+  start
 end  
 
 
