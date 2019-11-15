@@ -12,6 +12,7 @@ def map(source)
 end
 
 
+
 def reduce(source, start = 0)
   i = 0
   value = 0
@@ -21,7 +22,6 @@ def reduce(source, start = 0)
   end
   value
 end  
-
 
 
 
