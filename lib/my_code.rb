@@ -16,7 +16,7 @@ def reduce(source, start = 0)
   i = 0
   value = 0
   while i < source.length do
-    yield(source[i])
+    value += yield(source[i])
     i += 1
   end
   value
