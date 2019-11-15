@@ -13,7 +13,7 @@ end
 
 
 
-def reduce(source, start = 0)
+def reduce(source, start = nil)
   
   if start
     total = start
